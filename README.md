@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16-orange?logo=tensorflow)
 ![Keras](https://img.shields.io/badge/Keras-3.x-red?logo=keras)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 A deep learning project that classifies images into **10 categories** using the CIFAR-10 dataset. Implements both a **custom CNN from scratch** and **MobileNetV2 transfer learning**, achieving up to **83.8% accuracy**.
