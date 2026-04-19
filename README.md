@@ -1,4 +1,4 @@
-# CIFAR-10 Image Classification — CNN + MobileNetV2
+# Image Classification Using CNN
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16-orange?logo=tensorflow)
@@ -36,7 +36,7 @@ A deep learning project that classifies images into **10 categories** using the 
 ## 🗂️ Project Structure
 
 ```
-Image-Classification/
+Image-Classification-Using-CNN/
 │
 ├── image-classification.py    # Main training pipeline
 ├── test_prediction.py         # Test on random images
@@ -51,6 +51,7 @@ Image-Classification/
 ```
 
 ---
+
 
 ## 🏗️ Model Architecture
 
@@ -131,28 +132,44 @@ scikit-learn==1.5.0
 
 ## 🔍 Sample Prediction Output
 
-Running `test_prediction.py` produces a 3-panel visualization:
+Running `test_prediction.py` picks a random test image and predicts using both models:
 
+**Test 1 — Ship**
+```
+=============================================
+  True Label      : SHIP
+  CNN Prediction  : SHIP  (100.0% confident)
+  MobileNet Pred  : SHIP  (99.7% confident)
+=============================================
+```
+
+**Test 2 — Horse**
 ```
 =============================================
   True Label      : HORSE
-  CNN Prediction  : HORSE  (71.3% confident)
-  MobileNet Pred  : HORSE  (94.2% confident)
+  CNN Prediction  : HORSE  (85.3% confident)
+  MobileNet Pred  : HORSE  (99.1% confident)
 =============================================
 ```
+
+Both models predicted correctly! MobileNetV2 shows consistently higher confidence, especially on the horse image (**99.1% vs 85.3%**).
 
 ---
 
 ## 📚 Dataset
 
-**CIFAR-10** — 60,000 color images (32×32 px) across 10 classes
+**CIFAR-10** — 60,000 color images (32×32 px) across 10 classes:
 - 50,000 training images
 - 10,000 test images
 - Auto-downloaded via `keras.datasets.cifar10`
+
+**10 Classes:** airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
 
 ---
 
 ## 🙋 Author
 
 **Hitesh Umesh**  
+GitHub: [@hit123esh](https://github.com/hit123esh)  
+
 Feel free to ⭐ this repo if you found it useful!
