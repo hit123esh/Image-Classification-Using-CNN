@@ -53,45 +53,6 @@ Image-Classification/
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/Image-Classification.git
-cd Image-Classification
-```
-
-### 2. Create and activate virtual environment
-```bash
-python3 -m venv .venv
-source .venv/bin/activate        # Mac/Linux
-.venv\Scripts\activate           # Windows
-```
-
-### 3. Install dependencies
-
-**Apple Silicon (M1/M2/M3 Mac):**
-```bash
-pip install -r requirements.txt
-```
-
-**Windows / Linux / Intel Mac:**
-```bash
-pip install tensorflow numpy matplotlib seaborn scikit-learn
-```
-
-### 4. Run the training pipeline
-```bash
-python3 -u image-classification.py
-```
-
-### 5. Test on a random image
-```bash
-python3 test_prediction.py
-```
-
----
-
 ## 🏗️ Model Architecture
 
 ### Part A — Custom CNN
